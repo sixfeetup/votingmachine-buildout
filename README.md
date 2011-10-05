@@ -4,10 +4,10 @@ Clone the buildout
 
     $ git clone git@github.com:sixfeetup/fedexvoting-buildout.git
 
-Then bootstrap (the `-v` is to avoid a buildout bug)
+Then bootstrap
 
     $ cd fedexvoting-buildout
-    $ python2.6 bootstrap -v 1.4.2
+    $ python2.6 bootstrap.py
 
 Now run buildout
 
