@@ -15,4 +15,4 @@ Now run buildout
 
 Now you can start up the instance like this for development
 
-    $ bin/paster server src/fedexvoting/development.ini --reload
+    $ bin/paster serve etc/paster.ini --reload
