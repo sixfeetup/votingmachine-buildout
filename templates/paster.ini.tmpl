@@ -28,24 +28,30 @@ port = ${port}
 keys = root, ${appname}
 
 [handlers]
-keys = console
+keys = console, filelog
 
 [formatters]
 keys = generic
 
 [logger_root]
 level = ${log_level}
-handlers = console
+handlers = console, filelog
 
 [logger_${appname}]
 level = ${log_level}
-handlers =
+handlers = console, filelog
 qualname = ${appname}
 
 [handler_console]
 class = StreamHandler
 args = (sys.stderr,)
 level = NOTSET
+formatter = generic
+
+[handler_filelog]
+class = FileHandler
+args = ('${var_dir}/event.log','a')
+level = ${log_level}
 formatter = generic
 
 [formatter_generic]
