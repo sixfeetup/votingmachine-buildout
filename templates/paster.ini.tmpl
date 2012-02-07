@@ -13,8 +13,8 @@ zodb_uri = zeo://${var_dir}/zeo.sock
 
 [pipeline:main]
 pipeline =
+    ${pipeline_extras}
     egg:repoze.retry#retry
-    egg:WebError#evalerror
     egg:repoze.tm2#tm
     ${appname}
 
