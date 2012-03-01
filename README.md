@@ -1,14 +1,14 @@
-# FedEx Voting buildout
+# Voting Machine buildout
 
 ## Install
 
 Clone the buildout
 
-    $ git clone git@github.com:sixfeetup/fedexvoting-buildout.git
+    $ git clone git@github.com:sixfeetup/votingmachine-buildout.git
 
 Put the proper environment in place
 
-    $ cd fedexvoting-buildout
+    $ cd votingmachine-buildout
     $ cp profiles/buildout.cfg.tmpl buildout.cfg
     $ vi buildout.cfg
     ... uncomment the line for the envrionment you want to run ...
